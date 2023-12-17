@@ -11,20 +11,20 @@ class Property:
 
 class House(Property):
     def __init__(self, area, rooms, price, address, plot):
-        Property.__init__(self, area, rooms, price, address)
+        super().__init__(area, rooms, price, address)
         self.plot = plot
 
     def __str__(self):
-        return f"House - {Property.__str__(self)}, Plot: {self.plot}"
+        return f"House - {super().__str__()}, Plot: {self.plot}"
 
 
 class Flat(Property):
     def __init__(self, area, rooms, price, address, floor):
-        Property.__init__(self, area, rooms, price, address)
+        super().__init__(area, rooms, price, address)
         self.floor = floor
 
     def __str__(self):
-        return f"Flat - {Property.__str__(self)}, Floor: {self.floor}"
+        return f"Flat - {super().__str__()}, Floor: {self.floor}"
 
 house = House(area=200, rooms=5, price=500000, address="Grunwaldzka 40", plot=10)
 flat = Flat(area=70, rooms=3, price=100000, address="Jaśminowa 50", floor=7)
