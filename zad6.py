@@ -9,8 +9,8 @@ def polacz_listy(lista_1: list, lista_2: list) -> list:
 
     return lista_bez_duplikatow_i_potega
 
-lista_1 = [2,4,6,8]
-lista_2 = [1,2,3,4]
+lista_1 = [2, 4, 6, 8]
+lista_2 = [1, 2, 3, 4]
 
 wynik = polacz_listy(lista_1, lista_2)
 print(wynik)
