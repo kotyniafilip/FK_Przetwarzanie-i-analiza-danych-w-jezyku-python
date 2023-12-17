@@ -4,4 +4,4 @@ def numbers_sum(first: int, second: int, third: int) -> bool:
     else:
         return False
 
-print(numbers_sum(1,4,10))
+print(numbers_sum(1, 4, 10))
