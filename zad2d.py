@@ -4,4 +4,3 @@ def second_numbers(list_of_numbers):
 
 numbers = list(range(10))
 second_numbers(numbers)
-
